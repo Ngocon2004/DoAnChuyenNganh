@@ -1,4 +1,4 @@
-import Logo from "../../../assets/image/logo.png"
+import Logo from "../../assets/image/petshop_logo.png";
 import Button from '@mui/material/Button';
 import CountryDropDown from "./CountryDropDown";
 import { FaAngleDown } from "react-icons/fa";
@@ -20,15 +20,15 @@ const Header = () => {
             
             <header className="header">
                 <div className="container">
-                    <div className="row">
+                    <div className="row ">
                       <div className="logoWapper d-flex align-items-center col-sm-2">
-                        <a href='/'><img src={Logo} alt="logo" style={{height: 50}}/></a>
+                       <link to={'/'}><img src={Logo} alt="logo" /></link>
                       </div>
 
                       <div className='col-sm-10 d-flex align-items-center part2'>
                        <CountryDropDown />
                        {/* Button tim kiem o day */}
-                       <div className=' headerSearch ml-3 mr-3'>
+                       <div className='headerSearch ml-3 mr-3'>
                           <input type='text' placeholder='Tìm kiếm sản phẩm...' />
                           <Button><IoMdSearch /></Button>                        
                        </div>
