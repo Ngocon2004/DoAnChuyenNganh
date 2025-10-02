@@ -1,10 +1,9 @@
-import Logo from "../../assets/image/petshop_logo.png";
+import Logo from "../../assets/image/logo.png";
 import Button from '@mui/material/Button';
 import CountryDropDown from "./CountryDropDown";
-import { FaAngleDown } from "react-icons/fa";
-import { IoMdSearch } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
 import { BsBag } from "react-icons/bs";
+import SearchBox from "../SearchBox";
 
 
 
@@ -22,23 +21,17 @@ const Header = () => {
                 <div className="container">
                     <div className="row ">
                       <div className="logoWapper d-flex align-items-center col-sm-2">
-                       <link to={'/'}><img src={Logo} alt="logo" /></link>
+                        <a href='/'><img src={Logo} alt="Logo" style={{height:50}}/></a>
                       </div>
 
                       <div className='col-sm-10 d-flex align-items-center part2'>
                        <CountryDropDown />
-                       {/* Button tim kiem o day */}
-                       <div className='headerSearch ml-3 mr-3'>
-                          <input type='text' placeholder='Tìm kiếm sản phẩm...' />
-                          <Button><IoMdSearch /></Button>                        
-                       </div>
-
-                       {/* Button tim kiem o day */}
+                     <SearchBox />
 
                        <div className='part3 d-flex align-items-center ml-auto'>
                         <Button className='circle mr-3'> <FiUser /></Button>
                           <div className='ml-auto cartTab d-flex align-items-center'>
-                              <span className='price'>$0.00</span>
+                              <span className='price'>0.000 VND</span>
                               <div className='possition-relative'>
                                 <Button className='circle ml-2'> <BsBag /></Button>
                                 <span className='count d-flex align-items-center justify-content-center'>0</span>
