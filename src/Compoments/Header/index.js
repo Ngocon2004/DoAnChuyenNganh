@@ -1,9 +1,10 @@
 import Logo from "../../assets/image/logo.png";
 import Button from '@mui/material/Button';
-import CountryDropDown from "./CountryDropDown";
 import { FiUser } from "react-icons/fi";
 import { BsBag } from "react-icons/bs";
-import SearchBox from "../SearchBox";
+import SearchBox from "./SearchBox";
+import Navigation from "./Navigation";
+import CountryDropDown from "./CountryDropDown";
 
 
 
@@ -13,7 +14,7 @@ const Header = () => {
         <div className="headerWrapper">
             <div className="top-strip bg-blue">
                 <div className="container">
-                    <p className="mb-0 mt-0 text-center ">Shop <b>PetShop</b> Bán Đồ Dùng Cho Thú Cưng</p>
+                    <p className="mb-0 mt-0 text-center ">Cửa Hàng <b>PetShop</b> Bán Đồ Dùng Cho Thú Cưng</p>
                 </div>
             </div>
             
@@ -25,8 +26,8 @@ const Header = () => {
                       </div>
 
                       <div className='col-sm-10 d-flex align-items-center part2'>
-                       <CountryDropDown />
-                     <SearchBox />
+                        <CountryDropDown />
+                        <SearchBox />
 
                        <div className='part3 d-flex align-items-center ml-auto'>
                         <Button className='circle mr-3'> <FiUser /></Button>
@@ -41,7 +42,9 @@ const Header = () => {
                       </div>
                     </div>
                 </div>
-              </header>
+            </header>
+            <Navigation />
+
         </div>
     </>
   );
