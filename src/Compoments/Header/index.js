@@ -5,10 +5,14 @@ import { BsBag } from "react-icons/bs";
 import SearchBox from "./SearchBox";
 import Navigation from "./Navigation";
 import CountryDropDown from "./CountryDropDown";
+import { useContext, useEffect } from "react";
+import { Mycontext } from "../../App";
 
 
 
 const Header = () => {
+  const context = useContext(Mycontext);
+
   return (   
     <>
         <div className="headerWrapper">
@@ -26,7 +30,7 @@ const Header = () => {
                       </div>
 
                       <div className='col-sm-10 d-flex align-items-center part2'>
-                        <CountryDropDown />
+                        {context.countryList.length!==0 && <CountryDropDown />}
                         <SearchBox />
 
                        <div className='part3 d-flex align-items-center ml-auto'>
