@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import { FaAngleDown } from "react-icons/fa";
 import Dialog from '@mui/material/Dialog';
@@ -6,7 +6,8 @@ import { IoMdSearch } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import Slide from '@mui/material/Slide';
 import { useContext, useEffect } from "react";
-import { Mycontext } from "../../App";
+import { Mycontext } from "../../../App";
+
 
 
 
