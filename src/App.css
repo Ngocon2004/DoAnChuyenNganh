@@ -160,3 +160,14 @@ nav .navPart2 ul li .subMenu a button{width: 100%; justify-content: flex-start!i
 
 nav .navPart2 ul li .subMenu a button:hover{ background: #f1f1f1; color: #006492; }
  nav .navPart2 ul li:hover .subMenu{opacity: 1; visibility: inherit;top: 100%;} 
+
+/* Home banner */
+.homeBannerSection{ position: relative; overflow: hidden; }
+.homeBannerSection *{outline: none!important; }
+.homeBannerSection .slick-arrow{ position:absolute; top: 45%; z-index: 100; display: flex; align-items:center; 
+  justify-content: center;width: 40px!important; height: 40px!important; background: #000; border-radius: 100%; font-family: FontAwesome!important;}
+.homeBannerSection .slick-arrow.slick-next{ right: 20px!important;}
+.homeBannerSection .slick-arrow.slick-prev{ left: 20px!important;}
+
+.homeBannerSection .slick-arrow.slick-next::before{ font-family: FontAwesome!important; color: #fff;}
+.homeBannerSection .slick-arrow.slick-prev::before{ font-family: FontAwesome!important; color: #fff;}
