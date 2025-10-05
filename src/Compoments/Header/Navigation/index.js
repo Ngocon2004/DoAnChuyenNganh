@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 const Navigation = () => {
 
-  const [isOpenSidebarVal,setisOpenSidebarVal]= useState(true);
+  const [isOpenSidebarVal,setisOpenSidebarVal]= useState(false);
     return (
             <nav>
                 <div className='container'>
@@ -32,6 +32,12 @@ const Navigation = () => {
                             <Link to="/"><Button>Phụ kiện</Button></Link>
                             <Link to="/"><Button>Đồ chơi</Button></Link>
                             <Link to="/"><Button>Khác</Button></Link>
+                              <Link to="/"><Button>Phụ kiện</Button></Link>
+                                    <Link to="/"><Button>Đồ chơi</Button></Link>
+                                    <Link to="/"><Button>Khác</Button></Link>
+                                     <Link to="/"><Button>Phụ kiện</Button></Link>
+                                    <Link to="/"><Button>Đồ chơi</Button></Link>
+                                    <Link to="/"><Button>Khác</Button></Link>
                           </ul>
                         </div>
                       </div>
@@ -51,6 +57,8 @@ const Navigation = () => {
                                     <Link to="/"><Button>Phụ kiện</Button></Link>
                                     <Link to="/"><Button>Đồ chơi</Button></Link>
                                     <Link to="/"><Button>Khác</Button></Link>
+                                   
+
                                     
                                 </div>
                             </li>

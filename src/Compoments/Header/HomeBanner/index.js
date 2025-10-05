@@ -5,35 +5,31 @@ import Slider from "react-slick";
 const HomeBanner=()=>{
     
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows:true,
+        autoplay:true
     };
-
+    
     return(
 
         <div className="homeBannerSection">
             <Slider {...settings}>
-                
-                    <div className="item">
-                        <img src="https://paddy.vn/cdn/shop/files/banner_web_1880_x_720_px_d0cd69bd-82c2-4d89-ba1f-8fd08f172cc9.png?v=1759654397&width=1880" className="w-100"/>
-
-                    </div>
-                    <div className="item">
-                        <img src="https://paddy.vn/cdn/shop/files/banner_web_1880_x_720_px_d0cd69bd-82c2-4d89-ba1f-8fd08f172cc9.png?v=1759654397&width=1880" className="w-100"/>
-
-                    </div>
-                    <div className="item">
-                        <img src="https://paddy.vn/cdn/shop/files/banner_web_1880_x_720_px_d0cd69bd-82c2-4d89-ba1f-8fd08f172cc9.png?v=1759654397&width=1880" className="w-100"/>
-
-                    </div>
-                    <div className="item">
-                        <img src="https://paddy.vn/cdn/shop/files/banner_web_1880_x_720_px_d0cd69bd-82c2-4d89-ba1f-8fd08f172cc9.png?v=1759654397&width=1880" className="w-100"/>
-
-                    </div>
-                
+                <div className="item">
+                    <img src="https://thumbs.dreamstime.com/b/animal-pet-toy-store-interior-cartoon-background-supermarket-indoor-cat-dog-care-accessory-to-buy-domestic-canine-cage-282320011.jpg?w=1400" className="w-100"/>
+                </div> 
+                <div className="item">
+                    <img src="https://thumbs.dreamstime.com/b/animal-pet-toy-store-interior-cartoon-background-supermarket-indoor-cat-dog-care-accessory-to-buy-domestic-canine-cage-282320011.jpg?w=1400" className="w-100"/>
+                </div> 
+                <div className="item">
+                    <img src="https://thumbs.dreamstime.com/b/animal-pet-toy-store-interior-cartoon-background-supermarket-indoor-cat-dog-care-accessory-to-buy-domestic-canine-cage-282320011.jpg?w=1400" className="w-100"/>
+                </div> 
+                <div className="item">
+                    <img src="https://thumbs.dreamstime.com/b/animal-pet-toy-store-interior-cartoon-background-supermarket-indoor-cat-dog-care-accessory-to-buy-domestic-canine-cage-282320011.jpg?w=1400" className="w-100"/>
+                </div>              
             </Slider>
         </div>
 
