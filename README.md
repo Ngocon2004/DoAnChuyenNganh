@@ -2,20 +2,6 @@
 
 
 ## Available Scripts
-clone về xong chạy 2 lệnh{
-npm instal
-
-npm start
-}
-
-
-
-
-
-npm test
-npm run build
-npm run eject
-
 
 
 
