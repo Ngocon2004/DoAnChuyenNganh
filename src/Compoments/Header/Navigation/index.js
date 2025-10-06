@@ -3,6 +3,8 @@ import { IoIosMenu } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+import { FaAngleRight } from "react-icons/fa6";
+
 
 const Navigation = () => {
   const [isOpenSidebarVal, setIsOpenSidebarVal] = useState(false);
@@ -25,7 +27,7 @@ const Navigation = () => {
               <div className={`sidebarNav ${isOpenSidebarVal === true ? 'open' : ''}`}>
                 <ul>
                   <li>
-                    <Link to='/'><Button>Chó</Button></Link>
+                    <Link to='/'><Button>Chó</Button> <FaAngleRight className='ml-auto' /></Link>
                     <div className='subMenu'>
                       <Link to='/'><Button>Thức ăn</Button></Link>
                       <Link to='/'><Button>Vệ sinh</Button></Link>
@@ -36,7 +38,7 @@ const Navigation = () => {
                     </div>
                   </li>
                   <li>
-                    <Link to='/'><Button>Mèo</Button></Link>
+                    <Link to='/'><Button>Mèo</Button> <FaAngleRight className='ml-auto' /></Link>
                     <div className='subMenu'>
                       <Link to='/'><Button>Thức ăn</Button></Link>
                       <Link to='/'><Button>Vệ sinh</Button></Link>
@@ -46,17 +48,7 @@ const Navigation = () => {
                       <Link to='/'><Button>Phụ kiện</Button></Link>
                     </div>
                   </li>
-                  <li>
-                    <Link to='/'><Button>Thú cưng khác</Button></Link>
-                    <div className='subMenu'>
-                      <Link to='/'><Button>Thức ăn</Button></Link>
-                      <Link to='/'><Button>Vệ sinh</Button></Link>
-                      <Link to='/'><Button>Quần áo</Button></Link>
-                      <Link to='/'><Button>Chăm sóc sức khỏe</Button></Link>
-                      <Link to='/'><Button>Thiết bị</Button></Link>
-                      <Link to='/'><Button>Phụ kiện</Button></Link>
-                    </div>
-                  </li>
+                  <li><Link to='/'><Button>Thú cưng khác</Button></Link></li>
                   <li><Link to='/'><Button>Thức ăn</Button></Link></li>
                   <li><Link to='/'><Button>Vệ sinh</Button></Link></li>
                   <li><Link to='/'><Button>Chăm sóc sức khỏe</Button></Link></li>
