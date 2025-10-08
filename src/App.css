@@ -4,8 +4,12 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
 
 
-body{padding: 20px; font-family: "Lato", sans-serif; font-size: 14px;}
+body{padding: 20px; font-family: "Lato", sans-serif; font-size: 14px; color: rgba(0,0,0,0.8);}
 .navPart1, .navPart2{z-index: 99;}
+
+.cursor{cursor: pointer;}
+.text-light{ color: #646464!important;}
+.text-sml{ font-size: 14px!important; }
 
 .bg-blue{background: #233a95 ;}
 button:focus{outline: none;}
@@ -127,24 +131,50 @@ nav .navPart1 .catWrapper .sidebarNav.open{ height: auto; opacity: 1; visibility
   
 /* cot item DS SP */
 nav .navPart1 .catWrapper .sidebarNav ul{ display: flex; flex-direction: column; gap: 0; padding: 0; margin: 0; }
-nav .navPart1 .catWrapper .sidebarNav ul li{ width: 100%; list-style: none; padding: 0 10px; }
+nav .navPart1 .catWrapper .sidebarNav ul li{ width: 100%; list-style: none; padding: 0; }
 nav .navPart1 .catWrapper .sidebarNav ul li button{ color: #000; width: 100%; justify-content:flex-start; 
   text-transform: capitalize !important;}
 nav .navPart1 .catWrapper .sidebarNav ul li button:hover{background: transparent !important;}
-
-nav .navPart1 .catWrapper .sidebarNav ul li button svg{ font-size: 12px; margin-left: auto; opacity: 0.7;}
 
 nav .navPart2 .catWrapper{position: relative;}
 nav .navPart2 .catWrapper .sidebarNav{ width: 100%; height: 400%; background: #fff; position: absolute;top: 100%;left: 0;}
 nav .navPart2 .catWrapper .sidebarNav li{width: 100%;}
 
-nav .navPart1 .catWrapper .sidebarNav ul li{position: static;}
-nav .navPart1 .catWrapper .sidebarNav ul li.subMenu{ position:absolute; top: 0px; left: 100px;
-  width: 250px; height: 100%; background: #fff; opacity: 0; visibility: hidden;
-  transition: all 0.2ms ease-in-out; border-left: 1px solid rgba(0,0,0,0.1);}
+/* make each li the positioning context for its submenu */
+nav .navPart1 .catWrapper .sidebarNav ul li{position: relative;}
 
-nav .navPart1 .catWrapper .sidebarNav ul li.subMenu:hover{ opacity: 1; visibility:  inherit; left: 100%; padding: 20px;}
-nav .navPart1 .catWrapper .sidebarNav ul li.subMenu:hover button{ border-radius: 0px!important;}
+/* .subMenu is the div inside each li; place it to the right and hide by default */
+nav .navPart1 .catWrapper .sidebarNav ul li > .subMenu{
+  position: absolute;
+  top: 0;
+  left: 100%; /* place to the right of the parent li */
+  min-width: 240px;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(8px);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+  padding: 8px 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-left: 1px solid rgba(0,0,0,0.06);
+  z-index: 60;
+}
+
+/* reveal submenu on hover of the parent li */
+nav .navPart1 .catWrapper .sidebarNav ul li:hover .subMenu{
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* keyboard accessibility: reveal when focused inside */
+nav .navPart1 .catWrapper .sidebarNav ul li:focus-within > .subMenu{
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li:hover > .subMenu button{ border-radius: 0px !important;}
 
 nav .allCatTab {background: #006492;padding: 8px 20px !important;border-radius: 30px !important;}
 nav .allCatTab *{color: #fff;}
@@ -184,3 +214,18 @@ nav .navPart2 ul li .subMenu a button:hover{ background: #f1f1f1; color: #006492
 
 .homeBannerSection .slick-arrow.slick-next::before{ font-family: FontAwesome!important; color: #fff;}
 .homeBannerSection .slick-arrow.slick-prev::before{ font-family: FontAwesome!important; color: #fff;}
+
+.slick-next::before, .slick-prev::before{ content: "\104"!important;}
+
+.homeBannerSection{cursor: pointer; }
+
+.homeProducts{ padding: 25px 0; width: 25%;}
+.homeProducts.banner{width: 100%; border-radius: 10px; overflow: hidden;}
+
+.productRow.hd{font-size: 25px;font-weight: 600;}
+
+.viewAllBnt{ padding:8px  25px!important; background: #fff; border:1px solid rgba(0,0,0,0.2); border-radius: 30px!important; color: #000!important;font-weight: 600;
+  text-transform: capitalize!important;}
+.viewAllBnt svg{font-size: 20px;}
+
+.productItem{ width: 100%; height: auto; border: 1px solid rgba(0,0,0,0.1); }
