@@ -4,8 +4,9 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
 
 
-body{padding: 20px; font-family: "Lato", sans-serif; font-size: 14px; color: rgba(0,0,0,0.8);}
+body{padding: 20px; font-family: "Lato", sans-serif; font-size: 14px; color: rgba(0,0,0,0.8); width: auto;}
 .navPart1, .navPart2{z-index: 99;}
+
 
 .cursor{cursor: pointer;}
 .text-light{ color: #646464!important;}
@@ -228,4 +229,31 @@ nav .navPart2 ul li .subMenu a button:hover{ background: #f1f1f1; color: #006492
   text-transform: capitalize!important;}
 .viewAllBnt svg{font-size: 20px;}
 
-.productItem{ width: 100%; height: auto; border: 1px solid rgba(0,0,0,0.1); }
+
+.productItem.action{ position: absolute; top: 20px; right: -100px;  z-index: 99; display: flex; flex-direction: column; gap: 10px; transition: all 0.2s ease-in-out;}
+.productItem.action button{ display: flex; align-items: center; justify-content: center; min-width: 40px !important; height: 40px !important; width: 40px !important;
+ border-radius: 50% ; background: #fff !important; border: 1px solid rgba(0,0,0,0.1) !important;
+  box-shadow: 0 1px 5px rgba(0 0 0 /12%), 0 1px 10px rgba(0 0 0 /24%) !important; transition: all 0.0s !important;}
+
+.productItem.action button svg{opacity: 0.7; color: #000; pointer-events: none; font-size: 16px;}
+
+.productItem.action button:hover{ background: #006492 !important; }
+.productItem.action button:hover svg{ color: #fff; opacity: 1; }
+
+.productItem .imgWrapper{overflow: hidden;}
+.productItem .imgWrapper img{transition: all 0.2s ease-in-out;}
+.productItem .imgWrapper:hover .actions{ top: 10px; opacity: 1; }
+.productItem .imgWrapper:hover img{ transform: scale(1.1); }
+
+.productItem{ width: 100%; height: auto; border: 1px solid rgba(0,0,0,0.1); cursor: pointer;
+position: relative;}
+.productItem.badge{display: inline-block; padding: 7px 10px; position: absolute; top: 10px; left: 20px; z-index: 99;}
+.productItem.info{ padding: 15px;}
+.productItem.info h4{ font-size: 16px; font-weight: 600; color: rgba(0,0,0,0.8); margin: 10px 0px;}
+.productItem.info .oldPrice{ font-size: 16px; font-weight: bold; color: rgba(0,0,0,0.4); text-decoration: line-through; margin-right: 10px;}
+.productItem.info .netPrice{ font-size: 18px; font-weight: bold; }
+
+.product_row .productItem{border-right: 1px solid !important;}
+.product_row.wiper-slider:last-child.productItem{border:1px solid rgba(0,0,0,0.2) !important;}
+.swiper{padding-right: 1px !important;}
+.badge-primary{background: #006492 !important; }

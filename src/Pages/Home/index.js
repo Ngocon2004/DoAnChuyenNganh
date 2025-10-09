@@ -8,6 +8,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
+import Rating from "@mui/material/Rating";
+import ProductItems from "../../Compoments/ProductItems";
 
 
 const Home = () => {
@@ -31,11 +33,11 @@ const Home = () => {
                         <img src={catb} className="cursor w-100"/>
                       </div>                      
                     </div>
-                    <div className="col-md-3">
+                   {/*  <div className="col-md-3">
                       <div className="banner">
                         <img src={dogb} className="cursor w-100"/>
                       </div>                      
-                    </div>
+                    </div>*/}
 
                     <div className="col-md-9 productRow">
                       <div className="d-flex align-items-center ">
@@ -49,7 +51,7 @@ const Home = () => {
                       <div className="product_row w-100 mt-4">
                         <Swiper
                                 slidesPerView={4}
-                                spaceBetween={30}
+                                spaceBetween={0}
                                 pagination={{
                                   clickable: true,
                                 }}
@@ -57,30 +59,30 @@ const Home = () => {
                                 className="mySwiper"
                         />
                           <SwiperSlide>
-                                <div className="productItem">
-                              <div className="imgWrapper">
-                                <img src="https://paddy.vn/cdn/shop/products/hat-royal-canin-poodle-adult-cho-cho-poodle-truong-thanh-paddy-2.jpg?v=1724921685" className="w-100"/>
-                                </div>
-
-                                <div className="imgWrapper">
-                                <img src="https://paddy.vn/cdn/shop/products/hat-royal-canin-poodle-adult-cho-cho-poodle-truong-thanh-paddy-2.jpg?v=1724921685" className="w-100"/>
-                                </div>
-
-                                <div className="imgWrapper">
-                                <img src="https://paddy.vn/cdn/shop/products/hat-royal-canin-poodle-adult-cho-cho-poodle-truong-thanh-paddy-2.jpg?v=1724921685" className="w-100"/>
-                                </div>
-
-                                <div className="imgWrapper">
-                                <img src="https://paddy.vn/cdn/shop/products/hat-royal-canin-poodle-adult-cho-cho-poodle-truong-thanh-paddy-2.jpg?v=1724921685" className="w-100"/>
-                                </div>
-                                
-                                <div className="imgWrapper">
-                                <img src="https://paddy.vn/cdn/shop/products/hat-royal-canin-poodle-adult-cho-cho-poodle-truong-thanh-paddy-2.jpg?v=1724921685" className="w-100"/>
-                                </div>
-                            </div>
+                            <ProductItems />
                           </SwiperSlide>
-                      </div>
-                     
+
+                          <SwiperSlide>
+                            <ProductItems />
+                          </SwiperSlide>
+
+                          <SwiperSlide>
+                            <ProductItems />
+                          </SwiperSlide>
+
+                          <SwiperSlide>
+                            <ProductItems />
+                          </SwiperSlide>
+
+                          <SwiperSlide>
+                            <ProductItems />
+                          </SwiperSlide>
+
+                          <SwiperSlide>
+                            <ProductItems />
+                          </SwiperSlide>
+                              
+                      </div>                     
                     </div>
                 </div>
 
