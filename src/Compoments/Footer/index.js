@@ -7,6 +7,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { CiTwitter } from "react-icons/ci";
+import Button from '@mui/material/Button';
 
 
 import Link from "@mui/material/Link";
@@ -41,7 +42,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className=" row mt-5 linkWrap">
+                <div className=" row mt-3 linkWrap">
                     <div className="col">
                         <h5>Cửa hàng</h5>
                         <ul>
@@ -79,8 +80,8 @@ const Footer = () => {
                             <li><Link to="#">Công Ty TNHH PetShop</Link></li>
                             <li><Link to="#">MST: 0123456789</Link></li>
                             <li><Link to="#">Địa chỉ: 123 Đường ABC, Phường 8, TP.Đà Lạt</Link></li>
-                            <li><Link to="#"><LuPhoneCall /> Hotline: 0123 456 789</Link></li>
-                            <li><Link to="#"><IoMailOutline /> Email: 2212363@dlu.edu.vn</Link></li>
+                            <li><Link to="#"><LuPhoneCall /> Hotline: <Button> 0123 456 789</Button></Link></li>
+                            <li><Link to="#"><IoMailOutline /> Email: <Button> 2212363@dlu.edu.vn</Button></Link></li>
                         </ul>
                     </div>
 
