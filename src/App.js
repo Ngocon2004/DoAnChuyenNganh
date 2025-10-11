@@ -6,13 +6,10 @@ import Header from './Compoments/Header';
 import { createContext, useEffect } from 'react';
 import axios from 'axios';
 import { useState } from 'react';
-
-
+import Footer from './Compoments/Footer';
 //import { Route } from 'react-router-dom';
 
 const Mycontext=createContext();
-
-
 
 function App() {
 
@@ -31,7 +28,6 @@ function App() {
     })
   }
 
-
   const values={
     countryList,
     selectedCountry,
@@ -39,16 +35,15 @@ function App() {
 
   }
 
-
-
   return (
     <BrowserRouter>
-    <Mycontext.Provider value={values}>
-      <Header />
-      <Routes>
-        <Route path="/" exact={true} element={<Home />} />
-      </Routes>
-      </Mycontext.Provider>
+      <Mycontext.Provider value={values}>
+        <Header />
+          <Routes>
+            <Route path="/" exact={true} element={<Home />} />
+          </Routes>
+      
+        </Mycontext.Provider>
     </BrowserRouter>
     
 

@@ -348,3 +348,40 @@ nav .navPart2 ul li .subMenu a button:hover{ background: #f1f1f1; color: #006492
 }
 .bannerSec{gap: 15px;}
 .sticky{position: sticky; top: 20px; z-index: 100;}
+
+/* Newsletter section */
+.newsLetterSection{width: 100%; height: 500px; background: #006492; position: relative; overflow: hidden; padding: 70px 0px ;}
+.newsLetterSection .col-md-6{position: static!important;}
+.newsLetterSection p{font-size: 18px;}
+.newsLetterSection h3{font-size: 30px; font-weight: bold;}
+.newsLetterSection p.text-light{color: #fff!important; opacity: 0.5; font-size: 15px;}
+.newsLetterSection img{position: absolute; bottom: 0px; right: 0px; }
+
+.newsLetterSection form{ width: 130%;height: 60px; background: #fff; padding: 10px; position: relative; border-radius: 5px;}
+.newsLetterSection form svg{position: absolute; top: 17px; left: 10px; font-size: 25px;}
+.newsLetterSection form input{ width: 100%; height: 100%; background: #fff!important; outline: none!important; border: 0px !important;
+padding-left: 50px; padding-right: 200px;}
+
+.newsLetterSection form button{ position: absolute; right: 5px; top: 5px;  background: #006492!important; 
+  font-size: 16px!important; padding: 10px  10px!important ;color: #fff!important; text-transform: capitalize!important;
+  width: 180px!important; border-radius: 5px!important;  font-weight: 600!important;}
+
+/* Footer section */
+footer{ width: 100%; height: 500px; margin: auto; background: #fff; padding: 35px 0px;}
+footer .topInfo{border-bottom: 1px solid rgba(0,0,0,0.1); padding: 20px ;}
+footer .topInfo .col{padding: 15px 15px; padding-left: 40px; border-right: 1px solid rgba(0,0,0,0.2);}
+footer .topInfo .col:last-child{ border-right: 0px;}
+footer .topInfo .col.svg{font-size: 25px;}
+footer .topInfo .col span{ font-size: 15px;}
+
+/* LinkWrap*/
+footer .linkWrap .h5{font-size: 15px; margin-bottom: 12px; font-weight: 500; }
+footer .linkWrap .ui li{ list-style: none; margin-bottom: 8px;}
+footer .linkWrap .ui li a{ color: #000;font-size: 13px;}
+footer .linkWrap .ui li a:hover{ color: #006492; text-decoration:none; }
+
+footer .copyright ul li a{ display: flex; align-items: center; justify-content:center;width: 100%;height: 40px; border-radius: 50%; 
+  border: 1px solid rgba(0,0,0,0.2); transition: all 0.3s;}
+footer .copyright ul li a svg{ font-size: 18px; color: rgba(0,0,0,0.8);}
+footer .copyright ul li a:hover{background: #006492 !important;}
+footer .copyright ul li a:hover svg{ color: #fff!important;}
