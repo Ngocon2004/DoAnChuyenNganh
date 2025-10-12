@@ -7,7 +7,15 @@
 body{padding: 20px; font-family: "Lato", sans-serif; font-size: 14px; color: rgba(0,0,0,0.8); overflow-x: hidden; background-color: #eefcff;}
 .navPart1, .navPart2{z-index: 99;}
 
+.badge{display: inline-block; padding: 7px 10px;}
+.badge.bg-success{background:#fff; color: #28a745 !important; }
 
+.btn-blue{background: #006492 !important;color: #fff !important; text-transform: capitalize! important; }
+.bg-big{font-size: 17px!important; padding: 15px 35px!important; min-width: auto!important;}
+.btn-round{ border-radius: 30px !important; }
+
+.btn-sml{font-size: 13px!important; color:#000;}
+.btn-sml svg{ font-size: 13px; margin-right: 6px; }
 .cursor{cursor: pointer;}
 .text-light{ color: #646464!important;}
 .text-sml{ font-size: 14px!important; }
@@ -256,8 +264,8 @@ nav .navPart2 ul li .subMenu a button:hover{ background: #f1f1f1; color: #006492
 
 .productItem.info{ padding: 15px;}
 .productItem.info h4{ font-size: 16px; font-weight: 600; color: rgba(0,0,0,0.8); margin: 10px 0px;}
-.productItem.info .oldPrice{ font-size: 16px; font-weight: bold; color: rgba(0,0,0,0.4); text-decoration: line-through; margin-right: 10px;}
-.productItem.info .netPrice{ font-size: 18px; font-weight: bold; }
+.info .oldPrice{ font-size: 15px; font-weight: bold; color: rgba(0,0,0,0.4); text-decoration: line-through; margin-right: 10px;}
+.info .netPrice{ font-size: 16px; font-weight: bold; }
 
 .product_row .productItem{border-right: 1px solid !important;}
 .product_row.wiper-slider:last-child.productItem{border:1px solid rgba(0,0,0,0.2) !important;}
@@ -389,3 +397,28 @@ footer .copyright ul li a:hover svg{ color: #fff!important;}
 
 .productModal .MuiPaper-elevation{ padding: 25px;  position: relative;max-width: 900px!important; width: 900px!important;}
 .productModal  h4{ font-size: 20px!important; color: rgba(0,0,0,0.7); font-weight: 600; margin-bottom: 15px;}
+
+/* Inner Image Zoom styles */
+
+.productZoom{ width: 100%; height: auto; border: 1px solid rgba(0,0,0,0.1); border-radius: 6px; overflow: hidden; padding: 0px; }
+.productZoom.badge{ position: absolute; top: 30px; left: 30px; z-index: 100; }
+.productZoomBig{width: 100%!important;}
+
+.zoomSlider{padding-top: 30px;}
+.zoomSlider .slick-slide {padding-right: 20px!important;}
+.zoomSlider *{outline: none!important; }
+.zoomSlider .item{ border: 2px solid transparent!important; overflow: hidden; border-radius: 10px; cursor: pointer;}
+.zoomSlider .slick-current .item{ border: 2px solid #006492!important; }
+.zoomSlider .slick-arrow{top: 50%!important;zoom: 50% !important;}
+.zoomSlider .slick-arrow.slick-next{ right: -10px!important;}
+.zoomSlider .slick-arrow.slick-prev{ left: -10px!important;}
+
+.quantityDrop{width: 150px;}
+.quantityDrop button{min-width: 40px!important; width: 40px!important; height: 40px!important;border-radius: 50px!important;
+   background:#edeef5!important;border: 1px solid rgba(0,0,0,0.1)!important; color: #000;}
+.quantityDrop button svg{ color: #000!important;}
+.quantityDrop input{width: 50px; border:  0px; background: transparent; outline: none!important; text-align: center;}
+
+
+.productModal .actions button{color: #000 !important; border: 1px solid rgba(0,0,0,0.1)!important;font-size: 10px!important;}
+.productModal .actions button svg{ font-size: 15px!important; margin-right: 6px;}

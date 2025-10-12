@@ -2,9 +2,23 @@ import { TfiFullscreen } from "react-icons/tfi";
 import Button from '@mui/material/Button';
 import Rating from "@mui/material/Rating";
 import { FaRegHeart } from "react-icons/fa";
+import { useContext, useEffect } from "react";
+import React, { useState } from 'react';
+import { Mycontext } from "../../App";
 
 const ProductItems = () => {
+
+    const context = useContext(Mycontext);
+
+    const viewProductDetails=(id)=>{
+        context.setisOpenProductModal(true);
+
+    }
+    const closeProductModal = () => {
+        context.setisOpenProductModal(false);
+    }
     return (
+        <> 
         
             <div className="productItem">
                 <div className="imgWrapper">
@@ -12,7 +26,7 @@ const ProductItems = () => {
                     </div>
                     <div className="info">
                         <h6 className="text-center">Hạt Royal Canin Poodle Adult Cho Chó Poodle Trưởng Thành </h6>
-                        <span className="text-success d-block">Còn hàng</span>
+                        <span className="text-success d-block mb-2">Còn hàng</span>
                         <Rating className="mt-2 mb-2" name="read-only" value={4} readOnly size="small" precision={0.5}/>
                             <div>
                             <span className="oldPrice ml-3">500.000đ</span>
@@ -21,10 +35,12 @@ const ProductItems = () => {
                         </div>
                         <span className="badge badge-primary">28%</span>
                         <div className="actions">
-                            <Button><TfiFullscreen/></Button>
+                            <Button onClick={()=>viewProductDetails(1)}><TfiFullscreen/></Button>
                             <Button><FaRegHeart/></Button>
                         </div>
             </div>
+            
+        </>
     )
 }
 export default ProductItems;
