@@ -8,6 +8,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import Footer  from './Compoments/Footer';
 import ProductModal from './Compoments/ProductModal';
+import Listing from './Pages/Listing';
 
 //import { Route } from 'react-router-dom';
 
@@ -47,6 +48,7 @@ function App() {
         <Header />
           <Routes>
             <Route path="/" exact={true} element={<Home />} />
+            <Route path="/listing:id" exact={true} element={<Listing />} />
           </Routes>
         <Footer/>
         {isOpenProductModal === true && <ProductModal />}

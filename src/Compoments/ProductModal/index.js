@@ -6,15 +6,15 @@ import { useRef } from 'react';
 import Slider from "react-slick";
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/styles.min.css';
-import { FaMinus } from "react-icons/fa6";
-import { FaPlus } from "react-icons/fa";
 import QuantityBox from "../QuantityBox";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { MdOutlineCompareArrows } from "react-icons/md";
-
+import { useContext } from "react";
+import { Mycontext } from "../../App";
 
 const ProductModal = (props) => {
 
+    {/*const [slideIndex, setSlideIndex] = useState(0);*/}
     const zoomSliderBig = useRef();
     const zoomSlider= useRef();
 
