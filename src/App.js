@@ -48,7 +48,7 @@ function App() {
         <Header />
           <Routes>
             <Route path="/" exact={true} element={<Home />} />
-            <Route path="/listing:id" exact={true} element={<Listing />} />
+            <Route path="/listing" exact={true} element={<Listing />}/>
           </Routes>
         <Footer/>
         {isOpenProductModal === true && <ProductModal />}

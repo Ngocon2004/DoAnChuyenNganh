@@ -114,7 +114,7 @@ const ProductModal = (props) => {
                     </Slider>
                 </div>
                 
-                <div className='col-md-7'>
+                <div className='col-md-7 d-inline-block '>
                     <div className="d-flex mt-4">
                         <div className="info flex-grow-1">
                             <h5>Hạt Royal Canin Poodle Adult Cho Chó Poodle Trưởng Thành </h5>
@@ -124,7 +124,9 @@ const ProductModal = (props) => {
                                 <span className="netPrice text-danger gl">420.000đ</span>
                             </div>
 
-                            <p className="mt-3">Thức ăn hạt Royal Canin Poodle Adult dành cho chó Poodle trưởng thành trên 10 tháng tuổi, giúp duy trì vóc dáng cân đối và bộ lông mềm mượt. Công thức đặc biệt giúp hỗ trợ sức khỏe hệ tiêu hóa và tăng cường sức đề kháng cho chó.</p>
+                            <p className="mt-3">Thức ăn hạt Royal Canin Poodle Adult dành cho chó Poodle trưởng thành trên 10 tháng tuổi, 
+                                giúp duy trì vóc dáng cân đối và bộ lông mềm mượt. Công thức đặc biệt giúp hỗ trợ sức khỏe hệ tiêu hóa và
+                                tăng cường sức đề kháng cho chó.</p>
                             <ul>
                                 <li>Thành phần dinh dưỡng cân đối, giàu protein và vitamin.</li>
                             </ul>

@@ -434,14 +434,38 @@ footer .copyright ul li a:hover svg{ color: #fff!important;}
 .product-listing-page .productListing .sidebar .scroll ul{ margin-bottom: 0px;}
 .product-listing-page .productListing .sidebar .scroll ul li{list-style: none; margin-bottom: 0px; width: 100%;}
 
+.product-listing-page .productListing .sidebar .sticky{ position: sticky; top: 50px; z-index: 100;}
+
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{ padding: 2px!important;}
 .css-ahj2mt-MuiTypography-root{ font-size: 13px!important; }
 .css-i14v87-MuiSvgIcon-root{width: 20px!important;height: 20px!important;}
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, 
   .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{ color: #006492!important; }
 
-.product-listing-page .productListing .content_right{ width: 70%; flex: 0 0 70%; padding-left: 50px;}
 
 .range-slider{height: 10px!important;}
 .range-slider .range-slider__thumb, .range-slider .range-slider__range{ background: #006492!important;  }
 .range-slider .range-slider__thumb{width: 20px!important;height: 20px!important;}
+
+
+.product-listing-page .productListing .content_right{ width: 75%; flex: 0 0 75%; padding-left: 50px;}
+
+.product-listing-page .productListing .content_right .showBy{width: 100%; height: 50px; background: #fff; padding: 15px 25px;}
+.product-listing-page .productListing .content_right .showBy .btnWrapper button{min-width: 40px!important; width: 40px!important; height: 40px!important;border-radius: 50%!important;
+  color: #000;}
+.product-listing-page .productListing .content_right .showBy .btnWrapper button svg{ color: #000;font-size: 20px!important; opacity: 0.7;}
+.product-listing-page .productListing .content_right .showBy .btnWrapper button:hover svg{opacity: 1;}
+.product-listing-page .productListing .content_right .showBy .btnWrapper button.act svg{opacity: 1!important;}
+
+.showByFilter button{min-width: auto!important; color: #000;}
+.showByFilter button svg{color: #000; opacity: 0.7; margin-left: 5px;}
+.showByFilter button.act{background: #fff;}
+.showByFilter button.act svg{opacity: 1!important;}
+
+.showPerPageDrown{width: 100%!important;}
+
+.productListing{display: flex; flex-wrap: wrap; gap: 20px;}
+.productListing.productItem.four{width: 23%;}
+.productListing.productItem.two{width: 48%;}
+.productListing.productItem.one{width: 23%; display: flex; align-items: center;}
+.productListing.productItem.one.imgWrapper{width: 25%;}
