@@ -59,7 +59,7 @@ const CountryDropDown = () => {
             <span className='ml-auto'> <FaAngleDown /> </span>
         </Button>
 
-    <Dialog TransitionComponent={Transition} open={isOpenModal} onClose={() => setIsOpenModal(false)} className='locationModal'>
+        <Dialog TransitionComponent={Transition} open={isOpenModal} onClose={() => setIsOpenModal(false)} className='locationModal'>
             <h4 className='mb-0'>Chọn Ngôn Ngữ</h4>
             <p> Nhập khu vực của bạn</p>
             <Button className='close_' onClick={ () => setIsOpenModal(false) }><MdClose /></Button>

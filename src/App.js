@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Footer  from './Compoments/Footer';
 import ProductModal from './Compoments/ProductModal';
 import Listing from './Pages/Listing';
+import ProductDetail from './Compoments/ProductDetail';
 
 //import { Route } from 'react-router-dom';
 
@@ -49,6 +50,7 @@ function App() {
           <Routes>
             <Route path="/" exact={true} element={<Home />} />
             <Route path="/listing" exact={true} element={<Listing />}/>
+            <Route path="/product" exact={true} element={<ProductDetail />}/>
           </Routes>
         <Footer/>
         {isOpenProductModal === true && <ProductModal />}
