@@ -58,7 +58,7 @@ const ProductModal = (props) => {
             </div>
             <hr />
 
-            <div className=" productDetailModal row mt-2">
+            <div className=" productDetailModal row mt-2 flex-nowrap">
                 <div className='col-md-6'>
                     <div className='productZoom position-relative'>
                         <div className='badge badge-primary'>20%</div>

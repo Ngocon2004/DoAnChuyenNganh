@@ -34,50 +34,58 @@ const Listing = () => {
                     <Sidebar />
                     <div className="content_right">
                        <img alt="banner" src="https://file.hstatic.net/200000264739/file/kc-website-banner-ol-231.2_0c619bed68cb498f9edbf54905c6f9d5.jpg" className="cursor w-100 mb-3 "/>
-                    </div>
 
-                    <div className="showBy mt-3 mb-3 d-flex align-items-center ">
-                        <div className="d-flex align-items-center btnWrapper">
-                            <Button className={productView==='one'&&'act'} onClick={() => setProductView('one')}><IoMdMenu /></Button>
-                            <Button className={productView==='three'&&'act'} onClick={() => setProductView('three')}><IoGrid /></Button>
-                            <Button className={productView==='four'&&'act'} onClick={() => setProductView('four')}><TfiLayoutGrid4Alt /></Button>
+                        <div className="showBy mt-3 mb-3 d-flex align-items-center ">
+                            <div className="d-flex align-items-center btnWrapper">
+                                <Button className={productView==='one'&&'act'} onClick={() => setProductView('one')}><IoMdMenu /></Button>
+                                <Button className={productView==='three'&&'act'} onClick={() => setProductView('three')}><IoGrid /></Button>
+                                <Button className={productView==='four'&&'act'} onClick={() => setProductView('four')}><TfiLayoutGrid4Alt /></Button>
+                            </div>
+                            <div className="ml-auto showByFilter">
+                                <Button  onClick={handleClick}>Hiện SL sản phẩm <FaAngleDown /></Button>
+                                <Menu
+                                    className="w-100 showPerPageDrown"
+                                    id="basic-menu"
+                                    anchorEl={anchorEl}
+                                    open={openDropdown}
+                                    onClose={handleClose}
+                                    slotProps={{
+                                    list: {
+                                        'aria-labelledby': 'basic-button',
+                                    },
+                                    }}
+                                >
+                                    <MenuItem onClick={handleClose}>10</MenuItem>
+                                    <MenuItem onClick={handleClose}>20</MenuItem>
+                                    <MenuItem onClick={handleClose}>30</MenuItem>
+                                    <MenuItem onClick={handleClose}>40</MenuItem>
+                                    <MenuItem onClick={handleClose}>50</MenuItem>
+                                </Menu>
+
+                            </div>
+
                         </div>
-                        <div className="ml-auto showByFilter">
-                            <Button  onClick={handleClick}>Hiện SL sản phẩm <FaAngleDown /></Button>
-                            <Menu
-                                className="w-100 showPerPageDrown"
-                                id="basic-menu"
-                                anchorEl={anchorEl}
-                                open={openDropdown}
-                                onClose={handleClose}
-                                slotProps={{
-                                list: {
-                                    'aria-labelledby': 'basic-button',
-                                },
-                                }}
-                            >
-                                <MenuItem onClick={handleClose}>10</MenuItem>
-                                <MenuItem onClick={handleClose}>20</MenuItem>
-                                <MenuItem onClick={handleClose}>30</MenuItem>
-                                <MenuItem onClick={handleClose}>40</MenuItem>
-                                <MenuItem onClick={handleClose}>50</MenuItem>
-                            </Menu>
+                        <div className={`productListing ${productView}`}>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+                            <ProductItems itemView={productView}/>
+
 
                         </div>
-
-                    </div>
-                    <div className="productListing">
-                        <ProductItems itemView={productView}/>
-                        <ProductItems itemView={productView}/>
-                        <ProductItems itemView={productView}/>
-                        <ProductItems itemView={productView}/>
-                        <ProductItems itemView={productView}/>
-                        <ProductItems itemView={productView}/>
-                        <ProductItems itemView={productView}/>
-
-                    </div>
-                    <div className=" d-flex align-items-center justify-content-center mt-4 mb-4">
-                         <Pagination count={10} color="primary"  size="large"/>
+                        <div className=" d-flex align-items-center justify-content-center mt-4 mb-4">
+                             <Pagination count={10} color="primary"  size="large"/>
+                        </div>
                     </div>
 
                 </div>
