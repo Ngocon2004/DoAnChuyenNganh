@@ -10,6 +10,7 @@ import { LuHeart } from "react-icons/lu";
 import { IoIosGitCompare } from "react-icons/io";
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
+import RelatedProduct from './RelatedProduct';
 //import { useContext } from "react";
 //import { Mycontext } from "../../App";
 
@@ -95,6 +96,7 @@ const ProductDetail = () => {
                     </div>
 
                 </div>
+
                 <br/>
                 <div className="card mt-5 p-5detailPageTabs">
                     <div className='customTabs'>
@@ -130,6 +132,7 @@ const ProductDetail = () => {
 
                         <br/>
                         <div class="table-responsive">
+                            
                             {activeTabs===1 &&
                              <table class="table table-bordered">
                                 <tbody>
@@ -178,10 +181,71 @@ const ProductDetail = () => {
                              </table>
                             }   
                         </div>
+                        <div className='tabContent ml-4'>
+                             {activeTabs===2 && 
+                            <div className='row '>
+                                <div className='col-md-8'>
+                                     <h3 className='mb-4'>Đánh giá cho Chi tiết tất cả các loại sản phẩm</h3>
+                                    <br/>
+                                    <div className='reviewScroll'>
+                                        <div className="reviewBox mb-4 border-bottom">
+                                            <div className='info'>
+                                                <div className="d-flex align-items-center w-100" >
+                                                    <h5> Nguyen Van A</h5>
+                                                    <Rating className="read-only ml-5" value={5} readOnly size="small" precision={0.5} />
+                                                </div>
+                                                <div>
+                                                    <h6 className='date'> 20/10/2023</h6>
+                                                    <p className='mt-2'>Sản phẩm rất tốt, giao hàng nhanh, đóng gói cẩn thận. Sẽ ủng hộ shop lần sau.</p>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <br class="res-hide"/>
+
+                                    <form class="reviewForm">
+                                        <h4 className='mb-4'> Thêm đánh giá của bạn</h4>
+                                        <div class="form-group">
+                                            <textarea className="form-control shadow" name="review" placeholder="Nhập đánh giá của bạn"></textarea>
+                                        </div>
+                                        
+                                        <div className="row">
+                                            <div className='col-md-6'>
+                                                <div className="form-group">
+                                                    <span className="MuiRating-root MuiRating-sizeMedium css-1i1gfbe"> 
+                                                        <Rating className="read-only ml-5" value={0} readOnly size="small" precision={0.5} /> </span>
+                                                
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <br/>
+
+                                        <div class="form-group">
+                                            <Button className='btn-blue btn-lg btn-big btn-round'> &nbsp; Gửi đánh giá</Button>
+
+                                        </div>
+                                    </form>
+
+
+                                </div>
+                            </div>
+                            }
+                        </div>
 
                     </div>
 
                 </div>
+                <br/>
+
+                <RelatedProduct title="Sản phẩm tương tự" />
+                <br/>
+                <RelatedProduct title="Sản phẩm bán chạy" />
+
             </div>
 
         </section>
