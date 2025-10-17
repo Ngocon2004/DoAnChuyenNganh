@@ -10,6 +10,7 @@ import Footer  from './Compoments/Footer';
 import ProductModal from './Compoments/ProductModal';
 import Listing from './Pages/Listing';
 import ProductDetail from './Compoments/ProductDetail';
+import Cart from './Pages/Cart';
 
 //import { Route } from 'react-router-dom';
 
@@ -51,6 +52,7 @@ function App() {
             <Route path="/" exact={true} element={<Home />} />
             <Route path="/listing" exact={true} element={<Listing />}/>
             <Route path="/product" exact={true} element={<ProductDetail />}/>
+            <Route path="/cart" exact={true} element={<Cart />}/>
           </Routes>
         <Footer/>
         {isOpenProductModal === true && <ProductModal />}

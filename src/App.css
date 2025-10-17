@@ -12,8 +12,9 @@ body{padding: 20px; font-family: "Lato", sans-serif; font-size: 14px; color: rgb
 .badge-success{background: #28a745 ; color: #fff ; }
 
 .btn-blue{background: #006492 !important;color: #fff !important; text-transform: capitalize! important; }
-.bg-big{font-size: 17px!important; padding: 15px 35px!important; min-width: auto!important;}
+.bg-big{font-size: 17px!important; padding: 15px 35px!important; min-width: auto!important; font-weight: bold!important;}
 .btn-round{ border-radius: 30px !important; }
+.bg-big svg{ font-size: 20px;  }
 
 .btn-sml{font-size: 13px!important; color:#000;}
 .btn-sml svg{ font-size: 13px; margin-right: 6px; }
@@ -22,6 +23,8 @@ body{padding: 20px; font-family: "Lato", sans-serif; font-size: 14px; color: rgb
 .cursor{cursor: pointer;}
 .text-light{ color: #646464!important;}
 .text-sml{ font-size: 14px!important; }
+.text-red{ color: #ea2b0f!important; }
+.text-blue{ color: #006492!important; }
 
 .bg-blue{background: #233a95 ;}
 button:focus{outline: none;}
@@ -426,6 +429,7 @@ footer .copyright ul li a:hover svg{ color: #fff!important;}
 .productModal .actions button{color: #000 !important; border: 1px solid rgba(0,0,0,0.1)!important;font-size: 10px!important;}
 .productModal .actions button svg{ font-size: 15px!important; margin-right: 6px;}
 
+
 .product-listing-page{ padding: 50px 0px;}
 .product-listing-page .productListing{gap: 20px; }
 .product-listing-page .productListing .sidebar{ width: 20px; flex: 0 0 20%;}
@@ -548,3 +552,28 @@ background: #edeef5!important; border: 1px solid rgba(0,0,0,0.1)!important; colo
 .progress-bar{font-size: 16px;}
 
 .reviewsCard .info p{font-size: 13px; line-height: 22px;}
+.customTabs .MuiButton-root{ text-transform: none; padding: 10px 18px; border-radius: 30px; border: 1px solid rgba(0,0,0,0.08); background: #faf7fc; color: rgba(0,0,0,0.8); font-weight: 600; }
+.customTabs .MuiButton-root:hover{ background: #f3eef9; }
+.customTabs .MuiButton-root.active{ background: #006492; color: #fff; border-color: transparent; box-shadow: 0 6px 18px rgba(111,66,193,0.12); }
+.customTabs .MuiButton-root.active:hover{ background: #006492; }
+
+/* cartPage */
+.cartPage .table thead {background: #ececec!important; border-radius: 10px; overflow: auto;}
+.cartPage table th ,.cartPage table td{ vertical-align: middle; text-align: center; }
+
+a:hover{text-decoration: none;}
+.cartItemWrapper {width: 380px;}
+.cartItemWrapper .imgWrapper{width: 100px; overflow: hidden;}
+.cartItemWrapper .info a:hover{ text-decoration: none;}
+.cartItemWrapper .info h6{  color: #343434; font-weight: bold; }
+.cartItemWrapper .info h6:hover{ color: #ff0000!important;}
+.remove{cursor: pointer;}
+.remove svg{ font-size: 30px;}
+.remove:hover svg{ color: #ff0000!important; }
+.cartPage .quantityDrop button{ zoom: 70%;}
+
+.cartPage .table td, .cartPage .table th{ border-top: 1px !important; border-bottom: 1px solid rgba(0,0,0,0.1)!important;}
+.cartPage .table tbody tr:hover{ background: #f9f9f9!important; }
+
+.cartDetails{ border: 0px !important; border-radius: 7px!important;}
+.cartDetails h4{ font-size: 16px; font-weight: bold; padding-bottom: 1px solid rgba(0,0,0,0.1)!important;}

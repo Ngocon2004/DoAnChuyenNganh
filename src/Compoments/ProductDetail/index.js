@@ -4,13 +4,13 @@ import { useRef } from 'react';
 import ProductZoom from '../ProductZoom';
 import Rating from '@mui/material/Rating';
 import QuantityBox from '../QuantityBox';
-import { BsCartDash } from "react-icons/bs";
 import { useState } from 'react';
 import { LuHeart } from "react-icons/lu";
 import { IoIosGitCompare } from "react-icons/io";
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import RelatedProduct from './RelatedProduct';
+import { IoCartOutline } from "react-icons/io5";
 //import { useContext } from "react";
 //import { Mycontext } from "../../App";
 
@@ -82,7 +82,7 @@ const ProductDetail = () => {
                             <div className="quantityDrop d-flex align-items-center mr-4">
                                 <QuantityBox />
                             </div>
-                            <Button className='btn-blue btn-lg btn-big btn-round'><BsCartDash /> &nbsp; Thêm vào giỏ hàng</Button>
+                            <Button className='btn-blue btn-lg btn-big btn-round'><IoCartOutline /> &nbsp; Thêm vào giỏ hàng</Button>
 
                             <Tooltip title="Add to Wishlist" placement="top">
                                 <Button className='btn-blue btn-lg btn-big btn-circle ml-4'><LuHeart /> </Button>

@@ -32,9 +32,7 @@ const ProductItems = (props) => {
                         <span className="oldPrice">500.000đ</span>
                         <span className="netPrice text-danger">420.000đ</span>
                     </div>
-                    <div className="infoActions">
-                        <Button  className="addToCart">Add to cart</Button>
-                    </div>
+                    
                 </div>
 
                 <span className="badge badge-primary">28%</span>
