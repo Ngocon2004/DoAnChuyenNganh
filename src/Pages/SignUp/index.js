@@ -69,7 +69,7 @@ const SignUp = () => {
                                 </div>
                             </div>
 
-                            <p className="mt-4">Chưa có tài khoản? <a href="/sign-up" className="cursor">Đăng ký</a></p>
+                            
                             <h6 className="hd my-3 text-center">Hoặc đăng nhập với</h6>
 
                            <Button className="loginWithGoogle mt-2" variant="outlined"> <FcGoogle /> Đăng nhập với Google</Button>
