@@ -34,6 +34,7 @@ const Header = () => {
                         <SearchBox />
 
                        <div className='part3 d-flex align-items-center ml-auto'>
+                        <Button className="btn-blue btn-lg btn-big ">Đăng nhập</Button>
                         <Button className='circle mr-3'> <FiUser /></Button>
                           <div className='ml-auto cartTab d-flex align-items-center'>
                               <span className='price'>0.000 VND</span>

@@ -89,7 +89,7 @@ const Footer = () => {
 
                 <div className="copyright mt4 pt-3 pb-3 d-flex">
                     <p className="mb-0">© 2023 PetShop. Đồ Án Chuyên Ngành.</p>
-                    <ul className="list list-inline ml-auto mb-0">
+                    <ul className="list list-inline ml-auto mb-0 socials">
                         <li className="list-inline-item">
                             <Link to="#"><FaFacebookF /></Link>
                         </li>
