@@ -13,6 +13,13 @@ import ProductDetail from './Compoments/ProductDetail';
 import Cart from './Pages/Cart';
 import SignIn from './Pages/SignIn';
 import SignUp from './Pages/SignUp';
+import AdminNav from './Admin/AddminNav';
+import Dashboard from './Admin/Dashboard';
+//import AddProduct from './Admin/AddProduct'
+import AllProducts from './Admin/AllProducts';
+import Users from './Admin/Users';
+
+
 //import { Route } from 'react-router-dom';
 
 const Mycontext = createContext();
@@ -63,6 +70,12 @@ function App() {
             <Route path="/cart" exact={true} element={<Cart />}/>
             <Route path="/signin" exact={true} element={<SignIn />}/>
             <Route path="/signup" exact={true} element={<SignUp />}/>
+            <Route path="/admin" exact={true} element={<AdminNav />}>
+              <Route path="dashboard" exact={true} element={<Dashboard />} />
+              {/*<Route path="add-product" exact={true} element={<AddProduct />} />*/}
+              {/*<Route path="all-products" exact={true} element={<AllProducts />} />*/}
+              {/*<Route path="users" exact={true} element={<Users />} />*/}
+            </Route>
           </Routes>
         <Footer/>
         {isOpenProductModal === true && <ProductModal />}
