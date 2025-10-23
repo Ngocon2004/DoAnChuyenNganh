@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-//import { db, storage } from "../firebase.config";
-//import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-//import { collection, addDoc } from "firebase/firestore";
+import { db, storage } from "../firebase.config";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 
 const AddProducts = () => {

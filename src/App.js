@@ -71,7 +71,7 @@ function App() {
             <Route path="/signin" exact={true} element={<SignIn />}/>
             <Route path="/signup" exact={true} element={<SignUp />}/>
             <Route path="/admin" exact={true} element={<AdminNav />}>
-              <Route path="dashboard" exact={true} element={<Dashboard />} />
+              {/* <Route path="dashboard" exact={true} element={<Dashboard />} />*/}
               {/*<Route path="add-product" exact={true} element={<AddProduct />} />*/}
               {/*<Route path="all-products" exact={true} element={<AllProducts />} />*/}
               {/*<Route path="users" exact={true} element={<Users />} />*/}
